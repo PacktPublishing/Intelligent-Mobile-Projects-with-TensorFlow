@@ -21,6 +21,7 @@ message StringIntLabelMapItem {
 message StringIntLabelMap {
   repeated StringIntLabelMapItem item = 1;
 };
+```
 
 We recommend that you start with reading the first four chapters in order, along with running the accompanying iOS and Android apps available from the book's source code repository at http://github.com/jeffxtang/mobiletfbook. That'll help you ensure that you have the development environments all set up for TensorFlow mobile app development and that you know how to integrate TensorFlow into your own iOS and/or Android apps. If you're an iOS developer, you'll also learn how to use Objective-C or Swift with TensorFlow, and when and how to use the TensorFlow pod or the manual TensorFlow iOS library.
 
