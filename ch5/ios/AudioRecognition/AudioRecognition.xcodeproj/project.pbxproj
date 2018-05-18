@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64B7722E2019A34500728AEF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B7722D2019A34500728AEF /* AVFoundation.framework */; };
+		64B772302019A57E00728AEF /* speech_commands_graph.pb in Resources */ = {isa = PBXBuildFile; fileRef = 64B7722F2019A57E00728AEF /* speech_commands_graph.pb */; };
+		64B772342019B5EE00728AEF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B772332019B5EE00728AEF /* AudioToolbox.framework */; };
+		64CA41FD20182A130098EA3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CA41FC20182A130098EA3B /* AppDelegate.m */; };
+		64CA420020182A130098EA3B /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64CA41FF20182A130098EA3B /* ViewController.mm */; };
+		64CA420320182A130098EA3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CA420120182A130098EA3B /* Main.storyboard */; };
+		64CA420520182A130098EA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CA420420182A130098EA3B /* Assets.xcassets */; };
+		64CA420820182A130098EA3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CA420620182A130098EA3B /* LaunchScreen.storyboard */; };
+		64CA420B20182A130098EA3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CA420A20182A130098EA3B /* main.m */; };
+		64CA421320182D040098EA3B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CA421220182D040098EA3B /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		64B7722D2019A34500728AEF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		64B7722F2019A57E00728AEF /* speech_commands_graph.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = speech_commands_graph.pb; sourceTree = "<group>"; };
+		64B772312019B5CB00728AEF /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		64B772332019B5EE00728AEF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		64CA41F820182A130098EA3B /* AudioRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CA41FB20182A130098EA3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		64CA41FC20182A130098EA3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		64CA41FE20182A130098EA3B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		64CA41FF20182A130098EA3B /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		64CA420220182A130098EA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64CA420420182A130098EA3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64CA420720182A130098EA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64CA420920182A130098EA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64CA420A20182A130098EA3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64CA421220182D040098EA3B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64CA41F520182A130098EA3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B772342019B5EE00728AEF /* AudioToolbox.framework in Frameworks */,
+				64B7722E2019A34500728AEF /* AVFoundation.framework in Frameworks */,
+				64CA421320182D040098EA3B /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64CA41EF20182A130098EA3B = {
+			isa = PBXGroup;
+			children = (
+				64CA41FA20182A130098EA3B /* AudioRecognition */,
+				64CA41F920182A130098EA3B /* Products */,
+				64CA421120182D030098EA3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		64CA41F920182A130098EA3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64CA41F820182A130098EA3B /* AudioRecognition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64CA41FA20182A130098EA3B /* AudioRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				64CA41FB20182A130098EA3B /* AppDelegate.h */,
+				64CA41FC20182A130098EA3B /* AppDelegate.m */,
+				64CA41FE20182A130098EA3B /* ViewController.h */,
+				64CA41FF20182A130098EA3B /* ViewController.mm */,
+				64CA420120182A130098EA3B /* Main.storyboard */,
+				64CA420420182A130098EA3B /* Assets.xcassets */,
+				64CA420620182A130098EA3B /* LaunchScreen.storyboard */,
+				64CA420920182A130098EA3B /* Info.plist */,
+				64CA420A20182A130098EA3B /* main.m */,
+				64B7722F2019A57E00728AEF /* speech_commands_graph.pb */,
+			);
+			path = AudioRecognition;
+			sourceTree = "<group>";
+		};
+		64CA421120182D030098EA3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64B772332019B5EE00728AEF /* AudioToolbox.framework */,
+				64B772312019B5CB00728AEF /* CoreAudio.framework */,
+				64B7722D2019A34500728AEF /* AVFoundation.framework */,
+				64CA421220182D040098EA3B /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64CA41F720182A130098EA3B /* AudioRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64CA420E20182A130098EA3B /* Build configuration list for PBXNativeTarget "AudioRecognition" */;
+			buildPhases = (
+				64CA41F420182A130098EA3B /* Sources */,
+				64CA41F520182A130098EA3B /* Frameworks */,
+				64CA41F620182A130098EA3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioRecognition;
+			productName = AudioRecognition;
+			productReference = 64CA41F820182A130098EA3B /* AudioRecognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64CA41F020182A130098EA3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jeff Tang";
+				TargetAttributes = {
+					64CA41F720182A130098EA3B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 64CA41F320182A130098EA3B /* Build configuration list for PBXProject "AudioRecognition" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64CA41EF20182A130098EA3B;
+			productRefGroup = 64CA41F920182A130098EA3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64CA41F720182A130098EA3B /* AudioRecognition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64CA41F620182A130098EA3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CA420820182A130098EA3B /* LaunchScreen.storyboard in Resources */,
+				64CA420520182A130098EA3B /* Assets.xcassets in Resources */,
+				64B772302019A57E00728AEF /* speech_commands_graph.pb in Resources */,
+				64CA420320182A130098EA3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64CA41F420182A130098EA3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CA420020182A130098EA3B /* ViewController.mm in Sources */,
+				64CA420B20182A130098EA3B /* main.m in Sources */,
+				64CA41FD20182A130098EA3B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		64CA420120182A130098EA3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64CA420220182A130098EA3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64CA420620182A130098EA3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64CA420720182A130098EA3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64CA420C20182A130098EA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TENSORFLOW_ROOT = "$HOME/tensorflow-1.8.0";
+			};
+			name = Debug;
+		};
+		64CA420D20182A130098EA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TENSORFLOW_ROOT = "$HOME/tensorflow-1.8.0";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64CA420F20182A130098EA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V568RNX5Q4;
+				HEADER_SEARCH_PATHS = (
+					"$(TENSORFLOW_ROOT)",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads/protobuf/src",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads/eigen",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/proto",
+				);
+				INFOPLIST_FILE = AudioRecognition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/protobuf_ios/lib/libprotobuf.a",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/protobuf_ios/lib/libprotobuf-lite.a",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads/nsync/builds/lipo.ios.c++11/nsync.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ailabby.mobileai.AudioRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64CA421020182A130098EA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V568RNX5Q4;
+				HEADER_SEARCH_PATHS = (
+					"$(TENSORFLOW_ROOT)",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads/protobuf/src",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads/eigen",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/proto",
+				);
+				INFOPLIST_FILE = AudioRecognition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/protobuf_ios/lib/libprotobuf.a",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/protobuf_ios/lib/libprotobuf-lite.a",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads/nsync/builds/lipo.ios.c++11/nsync.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ailabby.mobileai.AudioRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64CA41F320182A130098EA3B /* Build configuration list for PBXProject "AudioRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64CA420C20182A130098EA3B /* Debug */,
+				64CA420D20182A130098EA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64CA420E20182A130098EA3B /* Build configuration list for PBXNativeTarget "AudioRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64CA420F20182A130098EA3B /* Debug */,
+				64CA421020182A130098EA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64CA41F020182A130098EA3B /* Project object */;
+}
