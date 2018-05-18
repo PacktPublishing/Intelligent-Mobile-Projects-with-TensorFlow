@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		640F1253202653D300DA1411 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 640F1252202653D300DA1411 /* AppDelegate.m */; };
+		640F1256202653D300DA1411 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 640F1255202653D300DA1411 /* ViewController.mm */; };
+		640F1259202653D300DA1411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640F1257202653D300DA1411 /* Main.storyboard */; };
+		640F125B202653D300DA1411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640F125A202653D300DA1411 /* Assets.xcassets */; };
+		640F125E202653D300DA1411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640F125C202653D300DA1411 /* LaunchScreen.storyboard */; };
+		640F1261202653D300DA1411 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 640F1260202653D300DA1411 /* main.m */; };
+		640F126B2026559200DA1411 /* ios_image_load.mm in Sources */ = {isa = PBXBuildFile; fileRef = 640F126A2026559200DA1411 /* ios_image_load.mm */; };
+		640F126E20265C0000DA1411 /* lab1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 640F126C20265C0000DA1411 /* lab1.jpg */; };
+		640F129A20268AEB00DA1411 /* tensorflow_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 640F129820268AEB00DA1411 /* tensorflow_utils.mm */; };
+		6F122B50145EEEEF17FC949C /* libPods-Image2Text.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0954D42B499CA9B221CBDF16 /* libPods-Image2Text.a */; };
+		8C084728202A2183000018B7 /* im2txt1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C084724202A2183000018B7 /* im2txt1.png */; };
+		8C084729202A2183000018B7 /* im2txt2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C084725202A2183000018B7 /* im2txt2.png */; };
+		8C08472A202A2183000018B7 /* im2txt3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C084726202A2183000018B7 /* im2txt3.png */; };
+		8C08472B202A2183000018B7 /* im2txt4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C084727202A2183000018B7 /* im2txt4.png */; };
+		8C46A9E3202BA590008B0D2F /* image2text_frozen_transformed_memmapped.pb in Resources */ = {isa = PBXBuildFile; fileRef = 8C46A9DF202BA58B008B0D2F /* image2text_frozen_transformed_memmapped.pb */; };
+		8C46A9E8202BB6B4008B0D2F /* word_counts.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8C46A9E7202BB6B4008B0D2F /* word_counts.txt */; };
+		8C46A9EA202BC255008B0D2F /* image2text_frozen_transformed.pb in Resources */ = {isa = PBXBuildFile; fileRef = 8C46A9E9202BC255008B0D2F /* image2text_frozen_transformed.pb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0954D42B499CA9B221CBDF16 /* libPods-Image2Text.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Image2Text.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		527CD0F9E39A8EB328D879F6 /* Pods-Image2Text.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image2Text.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Image2Text/Pods-Image2Text.debug.xcconfig"; sourceTree = "<group>"; };
+		640F124E202653D300DA1411 /* Image2Text.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Image2Text.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		640F1251202653D300DA1411 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		640F1252202653D300DA1411 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		640F1254202653D300DA1411 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		640F1255202653D300DA1411 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		640F1258202653D300DA1411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		640F125A202653D300DA1411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		640F125D202653D300DA1411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		640F125F202653D300DA1411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		640F1260202653D300DA1411 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		640F12692026559100DA1411 /* ios_image_load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_image_load.h; sourceTree = "<group>"; };
+		640F126A2026559200DA1411 /* ios_image_load.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ios_image_load.mm; sourceTree = "<group>"; };
+		640F126C20265C0000DA1411 /* lab1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lab1.jpg; sourceTree = "<group>"; };
+		640F129820268AEB00DA1411 /* tensorflow_utils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = tensorflow_utils.mm; sourceTree = "<group>"; };
+		640F129920268AEB00DA1411 /* tensorflow_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tensorflow_utils.h; sourceTree = "<group>"; };
+		796A5096839DF43A7843D6E4 /* Pods-Image2Text.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image2Text.release.xcconfig"; path = "Pods/Target Support Files/Pods-Image2Text/Pods-Image2Text.release.xcconfig"; sourceTree = "<group>"; };
+		8C084724202A2183000018B7 /* im2txt1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = im2txt1.png; sourceTree = "<group>"; };
+		8C084725202A2183000018B7 /* im2txt2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = im2txt2.png; sourceTree = "<group>"; };
+		8C084726202A2183000018B7 /* im2txt3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = im2txt3.png; sourceTree = "<group>"; };
+		8C084727202A2183000018B7 /* im2txt4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = im2txt4.png; sourceTree = "<group>"; };
+		8C46A9DF202BA58B008B0D2F /* image2text_frozen_transformed_memmapped.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = image2text_frozen_transformed_memmapped.pb; sourceTree = "<group>"; };
+		8C46A9E7202BB6B4008B0D2F /* word_counts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = word_counts.txt; sourceTree = "<group>"; };
+		8C46A9E9202BC255008B0D2F /* image2text_frozen_transformed.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = image2text_frozen_transformed.pb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		640F124B202653D300DA1411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F122B50145EEEEF17FC949C /* libPods-Image2Text.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A6ACCC952F1D6B34F58712D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				527CD0F9E39A8EB328D879F6 /* Pods-Image2Text.debug.xcconfig */,
+				796A5096839DF43A7843D6E4 /* Pods-Image2Text.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		640F1245202653D300DA1411 = {
+			isa = PBXGroup;
+			children = (
+				640F1250202653D300DA1411 /* Image2Text */,
+				640F124F202653D300DA1411 /* Products */,
+				3A6ACCC952F1D6B34F58712D /* Pods */,
+				CEA704E7E8445AF6858B9903 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		640F124F202653D300DA1411 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				640F124E202653D300DA1411 /* Image2Text.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		640F1250202653D300DA1411 /* Image2Text */ = {
+			isa = PBXGroup;
+			children = (
+				640F1251202653D300DA1411 /* AppDelegate.h */,
+				640F1252202653D300DA1411 /* AppDelegate.m */,
+				640F1254202653D300DA1411 /* ViewController.h */,
+				640F1255202653D300DA1411 /* ViewController.mm */,
+				640F12692026559100DA1411 /* ios_image_load.h */,
+				640F126A2026559200DA1411 /* ios_image_load.mm */,
+				640F129920268AEB00DA1411 /* tensorflow_utils.h */,
+				640F129820268AEB00DA1411 /* tensorflow_utils.mm */,
+				640F1257202653D300DA1411 /* Main.storyboard */,
+				640F125A202653D300DA1411 /* Assets.xcassets */,
+				640F125C202653D300DA1411 /* LaunchScreen.storyboard */,
+				640F125F202653D300DA1411 /* Info.plist */,
+				640F1260202653D300DA1411 /* main.m */,
+				8C46A9DF202BA58B008B0D2F /* image2text_frozen_transformed_memmapped.pb */,
+				8C46A9E9202BC255008B0D2F /* image2text_frozen_transformed.pb */,
+				8C46A9E7202BB6B4008B0D2F /* word_counts.txt */,
+				640F126C20265C0000DA1411 /* lab1.jpg */,
+				8C084724202A2183000018B7 /* im2txt1.png */,
+				8C084725202A2183000018B7 /* im2txt2.png */,
+				8C084726202A2183000018B7 /* im2txt3.png */,
+				8C084727202A2183000018B7 /* im2txt4.png */,
+			);
+			path = Image2Text;
+			sourceTree = "<group>";
+		};
+		CEA704E7E8445AF6858B9903 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0954D42B499CA9B221CBDF16 /* libPods-Image2Text.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		640F124D202653D300DA1411 /* Image2Text */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 640F1264202653D300DA1411 /* Build configuration list for PBXNativeTarget "Image2Text" */;
+			buildPhases = (
+				5F5BB498A25CFB7D69D6266D /* [CP] Check Pods Manifest.lock */,
+				640F124A202653D300DA1411 /* Sources */,
+				640F124B202653D300DA1411 /* Frameworks */,
+				640F124C202653D300DA1411 /* Resources */,
+				3A231A5A7AF078193B60E1BB /* [CP] Embed Pods Frameworks */,
+				130FFDC2505FF750D3FA1413 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Image2Text;
+			productName = Image2Text;
+			productReference = 640F124E202653D300DA1411 /* Image2Text.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		640F1246202653D300DA1411 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jeff Tang";
+				TargetAttributes = {
+					640F124D202653D300DA1411 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 640F1249202653D300DA1411 /* Build configuration list for PBXProject "Image2Text" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 640F1245202653D300DA1411;
+			productRefGroup = 640F124F202653D300DA1411 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				640F124D202653D300DA1411 /* Image2Text */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		640F124C202653D300DA1411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C46A9EA202BC255008B0D2F /* image2text_frozen_transformed.pb in Resources */,
+				8C46A9E3202BA590008B0D2F /* image2text_frozen_transformed_memmapped.pb in Resources */,
+				640F125E202653D300DA1411 /* LaunchScreen.storyboard in Resources */,
+				8C08472B202A2183000018B7 /* im2txt4.png in Resources */,
+				640F126E20265C0000DA1411 /* lab1.jpg in Resources */,
+				8C08472A202A2183000018B7 /* im2txt3.png in Resources */,
+				640F125B202653D300DA1411 /* Assets.xcassets in Resources */,
+				640F1259202653D300DA1411 /* Main.storyboard in Resources */,
+				8C084729202A2183000018B7 /* im2txt2.png in Resources */,
+				8C084728202A2183000018B7 /* im2txt1.png in Resources */,
+				8C46A9E8202BB6B4008B0D2F /* word_counts.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		130FFDC2505FF750D3FA1413 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Image2Text/Pods-Image2Text-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A231A5A7AF078193B60E1BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Image2Text/Pods-Image2Text-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F5BB498A25CFB7D69D6266D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Image2Text-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		640F124A202653D300DA1411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640F1256202653D300DA1411 /* ViewController.mm in Sources */,
+				640F126B2026559200DA1411 /* ios_image_load.mm in Sources */,
+				640F1261202653D300DA1411 /* main.m in Sources */,
+				640F129A20268AEB00DA1411 /* tensorflow_utils.mm in Sources */,
+				640F1253202653D300DA1411 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		640F1257202653D300DA1411 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				640F1258202653D300DA1411 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		640F125C202653D300DA1411 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				640F125D202653D300DA1411 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		640F1262202653D300DA1411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		640F1263202653D300DA1411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		640F1265202653D300DA1411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527CD0F9E39A8EB328D879F6 /* Pods-Image2Text.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V568RNX5Q4;
+				INFOPLIST_FILE = Image2Text/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ailabby.mobileai.Image2Text;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		640F1266202653D300DA1411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 796A5096839DF43A7843D6E4 /* Pods-Image2Text.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V568RNX5Q4;
+				INFOPLIST_FILE = Image2Text/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ailabby.mobileai.Image2Text;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		640F1249202653D300DA1411 /* Build configuration list for PBXProject "Image2Text" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640F1262202653D300DA1411 /* Debug */,
+				640F1263202653D300DA1411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		640F1264202653D300DA1411 /* Build configuration list for PBXNativeTarget "Image2Text" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640F1265202653D300DA1411 /* Debug */,
+				640F1266202653D300DA1411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 640F1246202653D300DA1411 /* Project object */;
+}

@@ -1,0 +1,2 @@
+target 'Image2Text'
+       pod 'TensorFlow-experimental'
