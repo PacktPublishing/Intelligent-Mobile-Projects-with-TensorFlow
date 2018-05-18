@@ -1,0 +1,2 @@
+model_checkpoint_path: "goog_model.ckpt"
+all_model_checkpoint_paths: "goog_model.ckpt"
