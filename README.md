@@ -34,8 +34,8 @@ If you're more interested in TensorFlow Lite or Core ML, read Chapter 11, Using 
 Other than that, you can go through chapters 5 to 10 in order to see how to train different kinds of CNN, RNN, LSTM, GAN, and AlphaZero models and how to use them on mobile, maybe running the iOS and/or Android apps for each chapter before looking into the detailed implementation. Alternatively, you can jump directly to any chapter with the model you're most interested in; just be aware that a later chapter may refer to an earlier chapter for some duplicated details, such as steps of adding a TensorFlow custom iOS library to your iOS app, or fixing some model loading or running errors by building a TensorFlow custom library. However, rest assured that you won't be lost, or at least we've done our best to provide user-friendly and step-by-step tutorials, with occasional references to some steps of previous tutorials, to help you avoid all possible pitfalls you may encounter when building mobile TensorFlow apps, while also avoiding repeating ourselves.
 
 ## Related Products
-* [Learn QT 5](https://www.packtpub.com/web-development/learn-qt-5?utm_source=github&utm_medium=repository&utm_campaign=9781788478854)
+* [TensorFlow 1.x Deep Learning Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/tensorflow-1x-deep-learning-cookbook)
 
-* [Qt 5 Projects](https://www.packtpub.com/application-development/qt-5-projects?utm_source=github&utm_medium=repository&utm_campaign=9781788293884)
+* [Mastering TensorFlow 1.x](https://www.packtpub.com/big-data-and-business-intelligence/mastering-tensorflow-1x)
 
-* [Game Programming Using Qt: Beginner's Guide](https://www.packtpub.com/game-development/game-programming-using-qt?utm_source=github&utm_medium=repository&utm_campaign=9781782168874)
+* [Reinforcement Learning with TensorFlow](https://www.packtpub.com/big-data-and-business-intelligence/reinforcement-learning-tensorflow)
