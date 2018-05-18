@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		645D07DF20043FC900918FE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 645D07DE20043FC900918FE5 /* AppDelegate.m */; };
+		645D07E520043FC900918FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645D07E320043FC900918FE5 /* Main.storyboard */; };
+		645D07E720043FC900918FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 645D07E620043FC900918FE5 /* Assets.xcassets */; };
+		645D07EA20043FC900918FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645D07E820043FC900918FE5 /* LaunchScreen.storyboard */; };
+		645D07ED20043FC900918FE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 645D07EC20043FC900918FE5 /* main.m */; };
+		645D07F820043FFD00918FE5 /* mscoco_label_map.pbtxt in Resources */ = {isa = PBXBuildFile; fileRef = 645D07F320043FF400918FE5 /* mscoco_label_map.pbtxt */; };
+		645D07FA20043FFD00918FE5 /* ssd_mobilenet_v1_frozen_inference_graph.pb in Resources */ = {isa = PBXBuildFile; fileRef = 645D07F520043FFD00918FE5 /* ssd_mobilenet_v1_frozen_inference_graph.pb */; };
+		645D07FD2004401000918FE5 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 645D07FC2004401000918FE5 /* ViewController.mm */; };
+		645D08022004515D00918FE5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645D07FF20044A3C00918FE5 /* Accelerate.framework */; };
+		645D08352005F96E00918FE5 /* string_int_label_map.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 645D08332005F96E00918FE5 /* string_int_label_map.pb.cc */; };
+		645D083C2006004600918FE5 /* wowopics.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D083A2006004600918FE5 /* wowopics.jpg */; };
+		645D084A200810F100918FE5 /* faster_rcnn_inceptionv2_frozen_inference_graph.pb in Resources */ = {isa = PBXBuildFile; fileRef = 645D0849200810F000918FE5 /* faster_rcnn_inceptionv2_frozen_inference_graph.pb */; };
+		645D085120087DFB00918FE5 /* ios_image_load.mm in Sources */ = {isa = PBXBuildFile; fileRef = 645D085020087DFB00918FE5 /* ios_image_load.mm */; };
+		645D08532008930700918FE5 /* faster_rcnn_resnet101_frozen_inference_graph.pb in Resources */ = {isa = PBXBuildFile; fileRef = 645D08522008930700918FE5 /* faster_rcnn_resnet101_frozen_inference_graph.pb */; };
+		645D08552008957400918FE5 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D08542008957300918FE5 /* image2.jpg */; };
+		645D08582009C7AA00918FE5 /* pet_label_map.pbtxt in Resources */ = {isa = PBXBuildFile; fileRef = 645D08572009C7AA00918FE5 /* pet_label_map.pbtxt */; };
+		645D08592009C9DF00918FE5 /* retrained_frozen_inference_graph_mobilenet.pb in Resources */ = {isa = PBXBuildFile; fileRef = 645D08562009C79900918FE5 /* retrained_frozen_inference_graph_mobilenet.pb */; };
+		645D085B2009CDAD00918FE5 /* pug1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D085A2009CDAC00918FE5 /* pug1.jpg */; };
+		645D0860200AC15E00918FE5 /* quantized_tiny-yolo.pb in Resources */ = {isa = PBXBuildFile; fileRef = 645D085E200AC15D00918FE5 /* quantized_tiny-yolo.pb */; };
+		645D0861200AC15E00918FE5 /* quantized_tiny-yolo-voc.pb in Resources */ = {isa = PBXBuildFile; fileRef = 645D085F200AC15E00918FE5 /* quantized_tiny-yolo-voc.pb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		645D07DA20043FC900918FE5 /* TFObjectDetectionAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFObjectDetectionAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		645D07DD20043FC900918FE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		645D07DE20043FC900918FE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		645D07E020043FC900918FE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		645D07E420043FC900918FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		645D07E620043FC900918FE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		645D07E920043FC900918FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		645D07EB20043FC900918FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		645D07EC20043FC900918FE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		645D07F320043FF400918FE5 /* mscoco_label_map.pbtxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mscoco_label_map.pbtxt; sourceTree = "<group>"; };
+		645D07F520043FFD00918FE5 /* ssd_mobilenet_v1_frozen_inference_graph.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = ssd_mobilenet_v1_frozen_inference_graph.pb; sourceTree = "<group>"; };
+		645D07FC2004401000918FE5 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		645D07FF20044A3C00918FE5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		645D08302005F96D00918FE5 /* string_int_label_map.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_int_label_map.pb.h; sourceTree = "<group>"; };
+		645D08332005F96E00918FE5 /* string_int_label_map.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = string_int_label_map.pb.cc; sourceTree = "<group>"; };
+		645D083A2006004600918FE5 /* wowopics.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wowopics.jpg; sourceTree = "<group>"; };
+		645D0849200810F000918FE5 /* faster_rcnn_inceptionv2_frozen_inference_graph.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = faster_rcnn_inceptionv2_frozen_inference_graph.pb; sourceTree = "<group>"; };
+		645D084F20087DFB00918FE5 /* ios_image_load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_image_load.h; sourceTree = "<group>"; };
+		645D085020087DFB00918FE5 /* ios_image_load.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ios_image_load.mm; sourceTree = "<group>"; };
+		645D08522008930700918FE5 /* faster_rcnn_resnet101_frozen_inference_graph.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = faster_rcnn_resnet101_frozen_inference_graph.pb; sourceTree = "<group>"; };
+		645D08542008957300918FE5 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		645D08562009C79900918FE5 /* retrained_frozen_inference_graph_mobilenet.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = retrained_frozen_inference_graph_mobilenet.pb; sourceTree = "<group>"; };
+		645D08572009C7AA00918FE5 /* pet_label_map.pbtxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pet_label_map.pbtxt; sourceTree = "<group>"; };
+		645D085A2009CDAC00918FE5 /* pug1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug1.jpg; sourceTree = "<group>"; };
+		645D085E200AC15D00918FE5 /* quantized_tiny-yolo.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = "quantized_tiny-yolo.pb"; sourceTree = "<group>"; };
+		645D085F200AC15E00918FE5 /* quantized_tiny-yolo-voc.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = "quantized_tiny-yolo-voc.pb"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		645D07D720043FC900918FE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645D08022004515D00918FE5 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		645D07D120043FC900918FE5 = {
+			isa = PBXGroup;
+			children = (
+				645D07DC20043FC900918FE5 /* TFObjectDetectionAPI */,
+				645D07DB20043FC900918FE5 /* Products */,
+				645D07FE20044A3C00918FE5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		645D07DB20043FC900918FE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				645D07DA20043FC900918FE5 /* TFObjectDetectionAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		645D07DC20043FC900918FE5 /* TFObjectDetectionAPI */ = {
+			isa = PBXGroup;
+			children = (
+				645D07DD20043FC900918FE5 /* AppDelegate.h */,
+				645D07DE20043FC900918FE5 /* AppDelegate.m */,
+				645D07E020043FC900918FE5 /* ViewController.h */,
+				645D07FC2004401000918FE5 /* ViewController.mm */,
+				645D07E320043FC900918FE5 /* Main.storyboard */,
+				645D07E620043FC900918FE5 /* Assets.xcassets */,
+				645D07E820043FC900918FE5 /* LaunchScreen.storyboard */,
+				645D07EB20043FC900918FE5 /* Info.plist */,
+				645D07EC20043FC900918FE5 /* main.m */,
+				645D08332005F96E00918FE5 /* string_int_label_map.pb.cc */,
+				645D08302005F96D00918FE5 /* string_int_label_map.pb.h */,
+				645D084F20087DFB00918FE5 /* ios_image_load.h */,
+				645D085020087DFB00918FE5 /* ios_image_load.mm */,
+				645D07F320043FF400918FE5 /* mscoco_label_map.pbtxt */,
+				645D07F520043FFD00918FE5 /* ssd_mobilenet_v1_frozen_inference_graph.pb */,
+				645D0849200810F000918FE5 /* faster_rcnn_inceptionv2_frozen_inference_graph.pb */,
+				645D08522008930700918FE5 /* faster_rcnn_resnet101_frozen_inference_graph.pb */,
+				645D08562009C79900918FE5 /* retrained_frozen_inference_graph_mobilenet.pb */,
+				645D08572009C7AA00918FE5 /* pet_label_map.pbtxt */,
+				645D085F200AC15E00918FE5 /* quantized_tiny-yolo-voc.pb */,
+				645D085E200AC15D00918FE5 /* quantized_tiny-yolo.pb */,
+				645D085A2009CDAC00918FE5 /* pug1.jpg */,
+				645D08542008957300918FE5 /* image2.jpg */,
+				645D083A2006004600918FE5 /* wowopics.jpg */,
+			);
+			path = TFObjectDetectionAPI;
+			sourceTree = "<group>";
+		};
+		645D07FE20044A3C00918FE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				645D07FF20044A3C00918FE5 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		645D07D920043FC900918FE5 /* TFObjectDetectionAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 645D07F020043FC900918FE5 /* Build configuration list for PBXNativeTarget "TFObjectDetectionAPI" */;
+			buildPhases = (
+				645D07D620043FC900918FE5 /* Sources */,
+				645D07D720043FC900918FE5 /* Frameworks */,
+				645D07D820043FC900918FE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFObjectDetectionAPI;
+			productName = TFObjectDetectionAPI;
+			productReference = 645D07DA20043FC900918FE5 /* TFObjectDetectionAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		645D07D220043FC900918FE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jeff Tang";
+				TargetAttributes = {
+					645D07D920043FC900918FE5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 645D07D520043FC900918FE5 /* Build configuration list for PBXProject "TFObjectDetectionAPI" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 645D07D120043FC900918FE5;
+			productRefGroup = 645D07DB20043FC900918FE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				645D07D920043FC900918FE5 /* TFObjectDetectionAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		645D07D820043FC900918FE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645D0860200AC15E00918FE5 /* quantized_tiny-yolo.pb in Resources */,
+				645D08532008930700918FE5 /* faster_rcnn_resnet101_frozen_inference_graph.pb in Resources */,
+				645D084A200810F100918FE5 /* faster_rcnn_inceptionv2_frozen_inference_graph.pb in Resources */,
+				645D07EA20043FC900918FE5 /* LaunchScreen.storyboard in Resources */,
+				645D083C2006004600918FE5 /* wowopics.jpg in Resources */,
+				645D085B2009CDAD00918FE5 /* pug1.jpg in Resources */,
+				645D08582009C7AA00918FE5 /* pet_label_map.pbtxt in Resources */,
+				645D08592009C9DF00918FE5 /* retrained_frozen_inference_graph_mobilenet.pb in Resources */,
+				645D07FA20043FFD00918FE5 /* ssd_mobilenet_v1_frozen_inference_graph.pb in Resources */,
+				645D0861200AC15E00918FE5 /* quantized_tiny-yolo-voc.pb in Resources */,
+				645D07E720043FC900918FE5 /* Assets.xcassets in Resources */,
+				645D08552008957400918FE5 /* image2.jpg in Resources */,
+				645D07F820043FFD00918FE5 /* mscoco_label_map.pbtxt in Resources */,
+				645D07E520043FC900918FE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		645D07D620043FC900918FE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645D08352005F96E00918FE5 /* string_int_label_map.pb.cc in Sources */,
+				645D07FD2004401000918FE5 /* ViewController.mm in Sources */,
+				645D07ED20043FC900918FE5 /* main.m in Sources */,
+				645D07DF20043FC900918FE5 /* AppDelegate.m in Sources */,
+				645D085120087DFB00918FE5 /* ios_image_load.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		645D07E320043FC900918FE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				645D07E420043FC900918FE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		645D07E820043FC900918FE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				645D07E920043FC900918FE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		645D07EE20043FC900918FE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TENSORFLOW_ROOT = "/Users/zero2one/tensorflow-1.4.0";
+			};
+			name = Debug;
+		};
+		645D07EF20043FC900918FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TENSORFLOW_ROOT = "/Users/zero2one/tensorflow-1.4.0";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		645D07F120043FC900918FE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V568RNX5Q4;
+				HEADER_SEARCH_PATHS = (
+					"$(TENSORFLOW_ROOT)",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads/protobuf/src",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads/eigen",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/proto",
+				);
+				INFOPLIST_FILE = TFObjectDetectionAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/protobuf_ios/lib/libprotobuf.a",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/protobuf_ios/lib/libprotobuf-lite.a",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads/nsync/builds/lipo.ios.c++11/nsync.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ailabby.mobileai.TFObjectDetectionAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TENSORFLOW_ROOT = "/Users/zero2one/tensorflow-1.4.0";
+			};
+			name = Debug;
+		};
+		645D07F220043FC900918FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V568RNX5Q4;
+				HEADER_SEARCH_PATHS = (
+					"$(TENSORFLOW_ROOT)",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads/protobuf/src",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads/eigen",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/proto",
+				);
+				INFOPLIST_FILE = TFObjectDetectionAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/protobuf_ios/lib/libprotobuf.a",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/gen/protobuf_ios/lib/libprotobuf-lite.a",
+					"$(TENSORFLOW_ROOT)/tensorflow/contrib/makefile/downloads/nsync/builds/lipo.ios.c++11/nsync.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ailabby.mobileai.TFObjectDetectionAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TENSORFLOW_ROOT = "/Users/zero2one/tensorflow-1.4.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		645D07D520043FC900918FE5 /* Build configuration list for PBXProject "TFObjectDetectionAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645D07EE20043FC900918FE5 /* Debug */,
+				645D07EF20043FC900918FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		645D07F020043FC900918FE5 /* Build configuration list for PBXNativeTarget "TFObjectDetectionAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645D07F120043FC900918FE5 /* Debug */,
+				645D07F220043FC900918FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 645D07D220043FC900918FE5 /* Project object */;
+}

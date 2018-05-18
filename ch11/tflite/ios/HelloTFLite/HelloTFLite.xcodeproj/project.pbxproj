@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0266D86BA301066784EF3F78 /* libPods-HelloTFLite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7ACBE57EDC5FB0651258F28 /* libPods-HelloTFLite.a */; };
+		78AC1B35205F8FEA00CE7C1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AC1B34205F8FEA00CE7C1D /* AppDelegate.m */; };
+		78AC1B38205F8FEA00CE7C1D /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 78AC1B37205F8FEA00CE7C1D /* ViewController.mm */; };
+		78AC1B3B205F8FEA00CE7C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AC1B39205F8FEA00CE7C1D /* Main.storyboard */; };
+		78AC1B3D205F8FEA00CE7C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78AC1B3C205F8FEA00CE7C1D /* Assets.xcassets */; };
+		78AC1B40205F8FEA00CE7C1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AC1B3E205F8FEA00CE7C1D /* LaunchScreen.storyboard */; };
+		78AC1B43205F8FEA00CE7C1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AC1B42205F8FEA00CE7C1D /* main.m */; };
+		78AC1B4B205F90D100CE7C1D /* mobilenet_v1_1.0_224.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 78AC1B49205F90D100CE7C1D /* mobilenet_v1_1.0_224.tflite */; };
+		78AC1B4C205F90D100CE7C1D /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 78AC1B4A205F90D100CE7C1D /* labels.txt */; };
+		78AC1B4E205F90F100CE7C1D /* lab1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78AC1B4D205F90F100CE7C1D /* lab1.jpg */; };
+		78AC1B51205F910D00CE7C1D /* ios_image_load.mm in Sources */ = {isa = PBXBuildFile; fileRef = 78AC1B50205F910D00CE7C1D /* ios_image_load.mm */; };
+		78AC1B5B20606D3C00CE7C1D /* dog_retrained_mobilenet10_224_not_quantized.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 78AC1B5A20606D3C00CE7C1D /* dog_retrained_mobilenet10_224_not_quantized.tflite */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2388F9FBCC68DC973F07C093 /* Pods-HelloTFLite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTFLite.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTFLite/Pods-HelloTFLite.release.xcconfig"; sourceTree = "<group>"; };
+		78AC1B30205F8FEA00CE7C1D /* HelloTFLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTFLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78AC1B33205F8FEA00CE7C1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		78AC1B34205F8FEA00CE7C1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		78AC1B36205F8FEA00CE7C1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		78AC1B37205F8FEA00CE7C1D /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		78AC1B3A205F8FEA00CE7C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78AC1B3C205F8FEA00CE7C1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78AC1B3F205F8FEA00CE7C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78AC1B41205F8FEA00CE7C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78AC1B42205F8FEA00CE7C1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		78AC1B49205F90D100CE7C1D /* mobilenet_v1_1.0_224.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mobilenet_v1_1.0_224.tflite; sourceTree = "<group>"; };
+		78AC1B4A205F90D100CE7C1D /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
+		78AC1B4D205F90F100CE7C1D /* lab1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lab1.jpg; sourceTree = "<group>"; };
+		78AC1B4F205F910D00CE7C1D /* ios_image_load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_image_load.h; sourceTree = "<group>"; };
+		78AC1B50205F910D00CE7C1D /* ios_image_load.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ios_image_load.mm; sourceTree = "<group>"; };
+		78AC1B5A20606D3C00CE7C1D /* dog_retrained_mobilenet10_224_not_quantized.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = dog_retrained_mobilenet10_224_not_quantized.tflite; sourceTree = "<group>"; };
+		89EF4BCBE7ACA97273CD088B /* Pods-HelloTFLite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTFLite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTFLite/Pods-HelloTFLite.debug.xcconfig"; sourceTree = "<group>"; };
+		E7ACBE57EDC5FB0651258F28 /* libPods-HelloTFLite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloTFLite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78AC1B2D205F8FEA00CE7C1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0266D86BA301066784EF3F78 /* libPods-HelloTFLite.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56A1C7F524EE6E29B0350AE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89EF4BCBE7ACA97273CD088B /* Pods-HelloTFLite.debug.xcconfig */,
+				2388F9FBCC68DC973F07C093 /* Pods-HelloTFLite.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78AC1B27205F8FEA00CE7C1D = {
+			isa = PBXGroup;
+			children = (
+				78AC1B32205F8FEA00CE7C1D /* HelloTFLite */,
+				78AC1B31205F8FEA00CE7C1D /* Products */,
+				56A1C7F524EE6E29B0350AE5 /* Pods */,
+				DF3333BB6434B3964166AB3C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78AC1B31205F8FEA00CE7C1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78AC1B30205F8FEA00CE7C1D /* HelloTFLite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78AC1B32205F8FEA00CE7C1D /* HelloTFLite */ = {
+			isa = PBXGroup;
+			children = (
+				78AC1B33205F8FEA00CE7C1D /* AppDelegate.h */,
+				78AC1B34205F8FEA00CE7C1D /* AppDelegate.m */,
+				78AC1B36205F8FEA00CE7C1D /* ViewController.h */,
+				78AC1B37205F8FEA00CE7C1D /* ViewController.mm */,
+				78AC1B39205F8FEA00CE7C1D /* Main.storyboard */,
+				78AC1B3C205F8FEA00CE7C1D /* Assets.xcassets */,
+				78AC1B3E205F8FEA00CE7C1D /* LaunchScreen.storyboard */,
+				78AC1B41205F8FEA00CE7C1D /* Info.plist */,
+				78AC1B42205F8FEA00CE7C1D /* main.m */,
+				78AC1B4F205F910D00CE7C1D /* ios_image_load.h */,
+				78AC1B50205F910D00CE7C1D /* ios_image_load.mm */,
+				78AC1B4A205F90D100CE7C1D /* labels.txt */,
+				78AC1B49205F90D100CE7C1D /* mobilenet_v1_1.0_224.tflite */,
+				78AC1B5A20606D3C00CE7C1D /* dog_retrained_mobilenet10_224_not_quantized.tflite */,
+				78AC1B4D205F90F100CE7C1D /* lab1.jpg */,
+			);
+			path = HelloTFLite;
+			sourceTree = "<group>";
+		};
+		DF3333BB6434B3964166AB3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7ACBE57EDC5FB0651258F28 /* libPods-HelloTFLite.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78AC1B2F205F8FEA00CE7C1D /* HelloTFLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78AC1B46205F8FEA00CE7C1D /* Build configuration list for PBXNativeTarget "HelloTFLite" */;
+			buildPhases = (
+				8CD95BF6F1ACBFB65018376C /* [CP] Check Pods Manifest.lock */,
+				78AC1B2C205F8FEA00CE7C1D /* Sources */,
+				78AC1B2D205F8FEA00CE7C1D /* Frameworks */,
+				78AC1B2E205F8FEA00CE7C1D /* Resources */,
+				CFB702E784556E0BF3A12DB0 /* [CP] Embed Pods Frameworks */,
+				8AFFCA13D041454E7DBA598E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloTFLite;
+			productName = HelloTFLite;
+			productReference = 78AC1B30205F8FEA00CE7C1D /* HelloTFLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78AC1B28205F8FEA00CE7C1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jeff Tang";
+				TargetAttributes = {
+					78AC1B2F205F8FEA00CE7C1D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 78AC1B2B205F8FEA00CE7C1D /* Build configuration list for PBXProject "HelloTFLite" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78AC1B27205F8FEA00CE7C1D;
+			productRefGroup = 78AC1B31205F8FEA00CE7C1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78AC1B2F205F8FEA00CE7C1D /* HelloTFLite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78AC1B2E205F8FEA00CE7C1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78AC1B40205F8FEA00CE7C1D /* LaunchScreen.storyboard in Resources */,
+				78AC1B4E205F90F100CE7C1D /* lab1.jpg in Resources */,
+				78AC1B3D205F8FEA00CE7C1D /* Assets.xcassets in Resources */,
+				78AC1B5B20606D3C00CE7C1D /* dog_retrained_mobilenet10_224_not_quantized.tflite in Resources */,
+				78AC1B4C205F90D100CE7C1D /* labels.txt in Resources */,
+				78AC1B3B205F8FEA00CE7C1D /* Main.storyboard in Resources */,
+				78AC1B4B205F90D100CE7C1D /* mobilenet_v1_1.0_224.tflite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AFFCA13D041454E7DBA598E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloTFLite/Pods-HelloTFLite-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CD95BF6F1ACBFB65018376C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloTFLite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFB702E784556E0BF3A12DB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloTFLite/Pods-HelloTFLite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78AC1B2C205F8FEA00CE7C1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78AC1B38205F8FEA00CE7C1D /* ViewController.mm in Sources */,
+				78AC1B51205F910D00CE7C1D /* ios_image_load.mm in Sources */,
+				78AC1B43205F8FEA00CE7C1D /* main.m in Sources */,
+				78AC1B35205F8FEA00CE7C1D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78AC1B39205F8FEA00CE7C1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78AC1B3A205F8FEA00CE7C1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78AC1B3E205F8FEA00CE7C1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78AC1B3F205F8FEA00CE7C1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78AC1B44205F8FEA00CE7C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		78AC1B45205F8FEA00CE7C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78AC1B47205F8FEA00CE7C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89EF4BCBE7ACA97273CD088B /* Pods-HelloTFLite.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V568RNX5Q4;
+				INFOPLIST_FILE = HelloTFLite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ailabby.HelloTFLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78AC1B48205F8FEA00CE7C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2388F9FBCC68DC973F07C093 /* Pods-HelloTFLite.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V568RNX5Q4;
+				INFOPLIST_FILE = HelloTFLite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ailabby.HelloTFLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78AC1B2B205F8FEA00CE7C1D /* Build configuration list for PBXProject "HelloTFLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78AC1B44205F8FEA00CE7C1D /* Debug */,
+				78AC1B45205F8FEA00CE7C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78AC1B46205F8FEA00CE7C1D /* Build configuration list for PBXNativeTarget "HelloTFLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78AC1B47205F8FEA00CE7C1D /* Debug */,
+				78AC1B48205F8FEA00CE7C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78AC1B28205F8FEA00CE7C1D /* Project object */;
+}
