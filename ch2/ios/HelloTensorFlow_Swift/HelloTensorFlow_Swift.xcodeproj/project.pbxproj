@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		645D075E1FFF16F800918FE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D075D1FFF16F800918FE5 /* AppDelegate.swift */; };
+		645D07601FFF16F800918FE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D075F1FFF16F800918FE5 /* ViewController.swift */; };
+		645D07631FFF16F800918FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645D07611FFF16F800918FE5 /* Main.storyboard */; };
+		645D07651FFF16F800918FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 645D07641FFF16F800918FE5 /* Assets.xcassets */; };
+		645D07681FFF16F800918FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645D07661FFF16F800918FE5 /* LaunchScreen.storyboard */; };
+		645D07721FFF18CD00918FE5 /* ios_image_load.mm in Sources */ = {isa = PBXBuildFile; fileRef = 645D07711FFF18CD00918FE5 /* ios_image_load.mm */; };
+		645D07741FFF1BD100918FE5 /* RunInference.mm in Sources */ = {isa = PBXBuildFile; fileRef = 645D07731FFF1BD100918FE5 /* RunInference.mm */; };
+		645D077E1FFF434400918FE5 /* lab2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D07781FFF434100918FE5 /* lab2.jpg */; };
+		645D07801FFF434400918FE5 /* quantized_stripped_dogs_retrained.pb in Resources */ = {isa = PBXBuildFile; fileRef = 645D077A1FFF434300918FE5 /* quantized_stripped_dogs_retrained.pb */; };
+		645D07811FFF434400918FE5 /* lab1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D077B1FFF434300918FE5 /* lab1.jpg */; };
+		645D07831FFF434400918FE5 /* dog_retrained_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 645D077D1FFF434400918FE5 /* dog_retrained_labels.txt */; };
+		645D078720005F0300918FE5 /* dog_retrained_mobilenet10_224.pb in Resources */ = {isa = PBXBuildFile; fileRef = 645D078620005F0200918FE5 /* dog_retrained_mobilenet10_224.pb */; };
+		645D0863200C440700918FE5 /* dog_retrained_mobilenet10_224_not_quantized.pb in Resources */ = {isa = PBXBuildFile; fileRef = 645D0862200C440700918FE5 /* dog_retrained_mobilenet10_224_not_quantized.pb */; };
+		FA16F403DA8A27BB6E0A0537 /* libPods-HelloTensorFlow_Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFA2CE9804C9BAE5549DE36 /* libPods-HelloTensorFlow_Swift.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		645D075A1FFF16F800918FE5 /* HelloTensorFlow_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTensorFlow_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		645D075D1FFF16F800918FE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		645D075F1FFF16F800918FE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		645D07621FFF16F800918FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		645D07641FFF16F800918FE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		645D07671FFF16F800918FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		645D07691FFF16F800918FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		645D076F1FFF18CC00918FE5 /* HelloTensorFlow_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloTensorFlow_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		645D07701FFF18CD00918FE5 /* ios_image_load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_image_load.h; sourceTree = "<group>"; };
+		645D07711FFF18CD00918FE5 /* ios_image_load.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ios_image_load.mm; sourceTree = "<group>"; };
+		645D07731FFF1BD100918FE5 /* RunInference.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RunInference.mm; sourceTree = "<group>"; };
+		645D07751FFF388F00918FE5 /* RunInference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunInference.h; sourceTree = "<group>"; };
+		645D07781FFF434100918FE5 /* lab2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lab2.jpg; sourceTree = "<group>"; };
+		645D077A1FFF434300918FE5 /* quantized_stripped_dogs_retrained.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = quantized_stripped_dogs_retrained.pb; sourceTree = "<group>"; };
+		645D077B1FFF434300918FE5 /* lab1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lab1.jpg; sourceTree = "<group>"; };
+		645D077D1FFF434400918FE5 /* dog_retrained_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dog_retrained_labels.txt; sourceTree = "<group>"; };
+		645D078620005F0200918FE5 /* dog_retrained_mobilenet10_224.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = dog_retrained_mobilenet10_224.pb; sourceTree = "<group>"; };
+		645D0862200C440700918FE5 /* dog_retrained_mobilenet10_224_not_quantized.pb */ = {isa = PBXFileReference; lastKnownFileType = file; name = dog_retrained_mobilenet10_224_not_quantized.pb; path = ../../HelloTensorFlow/HelloTensorFlow/dog_retrained_mobilenet10_224_not_quantized.pb; sourceTree = "<group>"; };
+		698777387F6888A1923C8097 /* Pods-HelloTensorFlow_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTensorFlow_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTensorFlow_Swift/Pods-HelloTensorFlow_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		7CFA2CE9804C9BAE5549DE36 /* libPods-HelloTensorFlow_Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloTensorFlow_Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADD4135712863B90B9C43B3 /* Pods-HelloTensorFlow_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTensorFlow_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTensorFlow_Swift/Pods-HelloTensorFlow_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		645D07571FFF16F800918FE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA16F403DA8A27BB6E0A0537 /* libPods-HelloTensorFlow_Swift.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55CCAB76C63D87100AD46E64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BADD4135712863B90B9C43B3 /* Pods-HelloTensorFlow_Swift.debug.xcconfig */,
+				698777387F6888A1923C8097 /* Pods-HelloTensorFlow_Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		645D07511FFF16F800918FE5 = {
+			isa = PBXGroup;
+			children = (
+				645D075C1FFF16F800918FE5 /* HelloTensorFlow_Swift */,
+				645D075B1FFF16F800918FE5 /* Products */,
+				55CCAB76C63D87100AD46E64 /* Pods */,
+				C62BE23D5062562AF77DCDAA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		645D075B1FFF16F800918FE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				645D075A1FFF16F800918FE5 /* HelloTensorFlow_Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		645D075C1FFF16F800918FE5 /* HelloTensorFlow_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				645D075D1FFF16F800918FE5 /* AppDelegate.swift */,
+				645D075F1FFF16F800918FE5 /* ViewController.swift */,
+				645D07751FFF388F00918FE5 /* RunInference.h */,
+				645D07731FFF1BD100918FE5 /* RunInference.mm */,
+				645D07611FFF16F800918FE5 /* Main.storyboard */,
+				645D07641FFF16F800918FE5 /* Assets.xcassets */,
+				645D07661FFF16F800918FE5 /* LaunchScreen.storyboard */,
+				645D07691FFF16F800918FE5 /* Info.plist */,
+				645D076F1FFF18CC00918FE5 /* HelloTensorFlow_Swift-Bridging-Header.h */,
+				645D07701FFF18CD00918FE5 /* ios_image_load.h */,
+				645D07711FFF18CD00918FE5 /* ios_image_load.mm */,
+				645D078620005F0200918FE5 /* dog_retrained_mobilenet10_224.pb */,
+				645D0862200C440700918FE5 /* dog_retrained_mobilenet10_224_not_quantized.pb */,
+				645D077A1FFF434300918FE5 /* quantized_stripped_dogs_retrained.pb */,
+				645D077D1FFF434400918FE5 /* dog_retrained_labels.txt */,
+				645D077B1FFF434300918FE5 /* lab1.jpg */,
+				645D07781FFF434100918FE5 /* lab2.jpg */,
+			);
+			path = HelloTensorFlow_Swift;
+			sourceTree = "<group>";
+		};
+		C62BE23D5062562AF77DCDAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CFA2CE9804C9BAE5549DE36 /* libPods-HelloTensorFlow_Swift.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		645D07591FFF16F800918FE5 /* HelloTensorFlow_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 645D076C1FFF16F800918FE5 /* Build configuration list for PBXNativeTarget "HelloTensorFlow_Swift" */;
+			buildPhases = (
+				2273AF5456A4DD169F2058E5 /* [CP] Check Pods Manifest.lock */,
+				645D07561FFF16F800918FE5 /* Sources */,
+				645D07571FFF16F800918FE5 /* Frameworks */,
+				645D07581FFF16F800918FE5 /* Resources */,
+				D0EBAC561F56F74CA205C82F /* [CP] Embed Pods Frameworks */,
+				6D7FFCC5892B7479D4519F8C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloTensorFlow_Swift;
+			productName = HelloTensorFlow_Swift;
+			productReference = 645D075A1FFF16F800918FE5 /* HelloTensorFlow_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		645D07521FFF16F800918FE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jeff Tang";
+				TargetAttributes = {
+					645D07591FFF16F800918FE5 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 645D07551FFF16F800918FE5 /* Build configuration list for PBXProject "HelloTensorFlow_Swift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 645D07511FFF16F800918FE5;
+			productRefGroup = 645D075B1FFF16F800918FE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				645D07591FFF16F800918FE5 /* HelloTensorFlow_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		645D07581FFF16F800918FE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645D077E1FFF434400918FE5 /* lab2.jpg in Resources */,
+				645D07681FFF16F800918FE5 /* LaunchScreen.storyboard in Resources */,
+				645D078720005F0300918FE5 /* dog_retrained_mobilenet10_224.pb in Resources */,
+				645D0863200C440700918FE5 /* dog_retrained_mobilenet10_224_not_quantized.pb in Resources */,
+				645D07801FFF434400918FE5 /* quantized_stripped_dogs_retrained.pb in Resources */,
+				645D07831FFF434400918FE5 /* dog_retrained_labels.txt in Resources */,
+				645D07651FFF16F800918FE5 /* Assets.xcassets in Resources */,
+				645D07631FFF16F800918FE5 /* Main.storyboard in Resources */,
+				645D07811FFF434400918FE5 /* lab1.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2273AF5456A4DD169F2058E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloTensorFlow_Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D7FFCC5892B7479D4519F8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloTensorFlow_Swift/Pods-HelloTensorFlow_Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0EBAC561F56F74CA205C82F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloTensorFlow_Swift/Pods-HelloTensorFlow_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		645D07561FFF16F800918FE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645D07741FFF1BD100918FE5 /* RunInference.mm in Sources */,
+				645D07601FFF16F800918FE5 /* ViewController.swift in Sources */,
+				645D075E1FFF16F800918FE5 /* AppDelegate.swift in Sources */,
+				645D07721FFF18CD00918FE5 /* ios_image_load.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		645D07611FFF16F800918FE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				645D07621FFF16F800918FE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		645D07661FFF16F800918FE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				645D07671FFF16F800918FE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		645D076A1FFF16F800918FE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		645D076B1FFF16F800918FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		645D076D1FFF16F800918FE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADD4135712863B90B9C43B3 /* Pods-HelloTensorFlow_Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V568RNX5Q4;
+				INFOPLIST_FILE = HelloTensorFlow_Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ailabby.mobileai.HelloTensorFlow-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloTensorFlow_Swift/HelloTensorFlow_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		645D076E1FFF16F800918FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 698777387F6888A1923C8097 /* Pods-HelloTensorFlow_Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V568RNX5Q4;
+				INFOPLIST_FILE = HelloTensorFlow_Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ailabby.mobileai.HelloTensorFlow-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloTensorFlow_Swift/HelloTensorFlow_Swift-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		645D07551FFF16F800918FE5 /* Build configuration list for PBXProject "HelloTensorFlow_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645D076A1FFF16F800918FE5 /* Debug */,
+				645D076B1FFF16F800918FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		645D076C1FFF16F800918FE5 /* Build configuration list for PBXNativeTarget "HelloTensorFlow_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645D076D1FFF16F800918FE5 /* Debug */,
+				645D076E1FFF16F800918FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 645D07521FFF16F800918FE5 /* Project object */;
+}

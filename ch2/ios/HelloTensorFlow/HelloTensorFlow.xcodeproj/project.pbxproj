@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		645D072E1FFEE43800918FE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 645D072D1FFEE43800918FE5 /* AppDelegate.m */; };
+		645D07311FFEE43800918FE5 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 645D07301FFEE43800918FE5 /* ViewController.mm */; };
+		645D07341FFEE43800918FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645D07321FFEE43800918FE5 /* Main.storyboard */; };
+		645D07361FFEE43800918FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 645D07351FFEE43800918FE5 /* Assets.xcassets */; };
+		645D07391FFEE43800918FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645D07371FFEE43800918FE5 /* LaunchScreen.storyboard */; };
+		645D073C1FFEE43800918FE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 645D073B1FFEE43800918FE5 /* main.m */; };
+		645D07441FFEE62200918FE5 /* ios_image_load.mm in Sources */ = {isa = PBXBuildFile; fileRef = 645D07431FFEE62200918FE5 /* ios_image_load.mm */; };
+		645D074C1FFEE79A00918FE5 /* lab2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D07461FFEE79800918FE5 /* lab2.jpg */; };
+		645D074D1FFEE79A00918FE5 /* dog_retrained_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 645D07471FFEE79800918FE5 /* dog_retrained_labels.txt */; };
+		645D07501FFEE79A00918FE5 /* quantized_stripped_dogs_retrained.pb in Resources */ = {isa = PBXBuildFile; fileRef = 645D074A1FFEE79A00918FE5 /* quantized_stripped_dogs_retrained.pb */; };
+		645D08142005460E00918FE5 /* pug2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D080F2005460D00918FE5 /* pug2.jpg */; };
+		645D08152005460E00918FE5 /* pug3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D08102005460D00918FE5 /* pug3.jpg */; };
+		645D08172005460E00918FE5 /* pug5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D08122005460E00918FE5 /* pug5.jpg */; };
+		645D08182005460E00918FE5 /* pug1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D08132005460E00918FE5 /* pug1.jpg */; };
+		645D081C2005464100918FE5 /* lab1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D081B2005464100918FE5 /* lab1.jpg */; };
+		645D081E200547AF00918FE5 /* pug4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D081D200547AF00918FE5 /* pug4.jpg */; };
+		645D08202005480400918FE5 /* samoyed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 645D081F2005480400918FE5 /* samoyed.jpg */; };
+		645D08222005494F00918FE5 /* dog_retrained_mobilenet10_224_not_quantized.pb in Resources */ = {isa = PBXBuildFile; fileRef = 645D08212005494F00918FE5 /* dog_retrained_mobilenet10_224_not_quantized.pb */; };
+		7D284F74D434035AC0A83FAD /* libPods-HelloTensorFlow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF79EE8138DA5FCC7D1A707 /* libPods-HelloTensorFlow.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		645D07291FFEE43800918FE5 /* HelloTensorFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTensorFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		645D072C1FFEE43800918FE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		645D072D1FFEE43800918FE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		645D072F1FFEE43800918FE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		645D07301FFEE43800918FE5 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		645D07331FFEE43800918FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		645D07351FFEE43800918FE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		645D07381FFEE43800918FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		645D073A1FFEE43800918FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		645D073B1FFEE43800918FE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		645D07421FFEE62200918FE5 /* ios_image_load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_image_load.h; sourceTree = "<group>"; };
+		645D07431FFEE62200918FE5 /* ios_image_load.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ios_image_load.mm; sourceTree = "<group>"; };
+		645D07461FFEE79800918FE5 /* lab2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lab2.jpg; sourceTree = "<group>"; };
+		645D07471FFEE79800918FE5 /* dog_retrained_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dog_retrained_labels.txt; sourceTree = "<group>"; };
+		645D074A1FFEE79A00918FE5 /* quantized_stripped_dogs_retrained.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = quantized_stripped_dogs_retrained.pb; sourceTree = "<group>"; };
+		645D080F2005460D00918FE5 /* pug2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug2.jpg; sourceTree = "<group>"; };
+		645D08102005460D00918FE5 /* pug3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug3.jpg; sourceTree = "<group>"; };
+		645D08122005460E00918FE5 /* pug5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug5.jpg; sourceTree = "<group>"; };
+		645D08132005460E00918FE5 /* pug1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug1.jpg; sourceTree = "<group>"; };
+		645D081B2005464100918FE5 /* lab1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lab1.jpg; sourceTree = "<group>"; };
+		645D081D200547AF00918FE5 /* pug4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug4.jpg; sourceTree = "<group>"; };
+		645D081F2005480400918FE5 /* samoyed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = samoyed.jpg; sourceTree = "<group>"; };
+		645D08212005494F00918FE5 /* dog_retrained_mobilenet10_224_not_quantized.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = dog_retrained_mobilenet10_224_not_quantized.pb; sourceTree = "<group>"; };
+		B5BA43B6268D7DFBAC847590 /* Pods-HelloTensorFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTensorFlow.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTensorFlow/Pods-HelloTensorFlow.release.xcconfig"; sourceTree = "<group>"; };
+		BFF79EE8138DA5FCC7D1A707 /* libPods-HelloTensorFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloTensorFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4000B062A010DEF1D9F2179 /* Pods-HelloTensorFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloTensorFlow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloTensorFlow/Pods-HelloTensorFlow.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		645D07261FFEE43800918FE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D284F74D434035AC0A83FAD /* libPods-HelloTensorFlow.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0540D6607A4861D25D9BA08B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF79EE8138DA5FCC7D1A707 /* libPods-HelloTensorFlow.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		645D07201FFEE43800918FE5 = {
+			isa = PBXGroup;
+			children = (
+				645D072B1FFEE43800918FE5 /* HelloTensorFlow */,
+				645D072A1FFEE43800918FE5 /* Products */,
+				BE319E3445F4E0FD1560E567 /* Pods */,
+				0540D6607A4861D25D9BA08B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		645D072A1FFEE43800918FE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				645D07291FFEE43800918FE5 /* HelloTensorFlow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		645D072B1FFEE43800918FE5 /* HelloTensorFlow */ = {
+			isa = PBXGroup;
+			children = (
+				645D072C1FFEE43800918FE5 /* AppDelegate.h */,
+				645D072D1FFEE43800918FE5 /* AppDelegate.m */,
+				645D072F1FFEE43800918FE5 /* ViewController.h */,
+				645D07301FFEE43800918FE5 /* ViewController.mm */,
+				645D07321FFEE43800918FE5 /* Main.storyboard */,
+				645D07351FFEE43800918FE5 /* Assets.xcassets */,
+				645D07371FFEE43800918FE5 /* LaunchScreen.storyboard */,
+				645D073A1FFEE43800918FE5 /* Info.plist */,
+				645D073B1FFEE43800918FE5 /* main.m */,
+				645D07421FFEE62200918FE5 /* ios_image_load.h */,
+				645D07431FFEE62200918FE5 /* ios_image_load.mm */,
+				645D07471FFEE79800918FE5 /* dog_retrained_labels.txt */,
+				645D08212005494F00918FE5 /* dog_retrained_mobilenet10_224_not_quantized.pb */,
+				645D074A1FFEE79A00918FE5 /* quantized_stripped_dogs_retrained.pb */,
+				645D081B2005464100918FE5 /* lab1.jpg */,
+				645D07461FFEE79800918FE5 /* lab2.jpg */,
+				645D08132005460E00918FE5 /* pug1.jpg */,
+				645D080F2005460D00918FE5 /* pug2.jpg */,
+				645D08102005460D00918FE5 /* pug3.jpg */,
+				645D081D200547AF00918FE5 /* pug4.jpg */,
+				645D08122005460E00918FE5 /* pug5.jpg */,
+				645D081F2005480400918FE5 /* samoyed.jpg */,
+			);
+			path = HelloTensorFlow;
+			sourceTree = "<group>";
+		};
+		BE319E3445F4E0FD1560E567 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4000B062A010DEF1D9F2179 /* Pods-HelloTensorFlow.debug.xcconfig */,
+				B5BA43B6268D7DFBAC847590 /* Pods-HelloTensorFlow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		645D07281FFEE43800918FE5 /* HelloTensorFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 645D073F1FFEE43800918FE5 /* Build configuration list for PBXNativeTarget "HelloTensorFlow" */;
+			buildPhases = (
+				A7AAB205BA065ADD98C5F01C /* [CP] Check Pods Manifest.lock */,
+				645D07251FFEE43800918FE5 /* Sources */,
+				645D07261FFEE43800918FE5 /* Frameworks */,
+				645D07271FFEE43800918FE5 /* Resources */,
+				FB174D044EDCB73F688D7B85 /* [CP] Embed Pods Frameworks */,
+				71F500D2B4BBBB17714A3037 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloTensorFlow;
+			productName = HelloTensorFlow;
+			productReference = 645D07291FFEE43800918FE5 /* HelloTensorFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		645D07211FFEE43800918FE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jeff Tang";
+				TargetAttributes = {
+					645D07281FFEE43800918FE5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 645D07241FFEE43800918FE5 /* Build configuration list for PBXProject "HelloTensorFlow" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 645D07201FFEE43800918FE5;
+			productRefGroup = 645D072A1FFEE43800918FE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				645D07281FFEE43800918FE5 /* HelloTensorFlow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		645D07271FFEE43800918FE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645D08222005494F00918FE5 /* dog_retrained_mobilenet10_224_not_quantized.pb in Resources */,
+				645D07391FFEE43800918FE5 /* LaunchScreen.storyboard in Resources */,
+				645D074C1FFEE79A00918FE5 /* lab2.jpg in Resources */,
+				645D08182005460E00918FE5 /* pug1.jpg in Resources */,
+				645D08172005460E00918FE5 /* pug5.jpg in Resources */,
+				645D07361FFEE43800918FE5 /* Assets.xcassets in Resources */,
+				645D08142005460E00918FE5 /* pug2.jpg in Resources */,
+				645D074D1FFEE79A00918FE5 /* dog_retrained_labels.txt in Resources */,
+				645D08202005480400918FE5 /* samoyed.jpg in Resources */,
+				645D081E200547AF00918FE5 /* pug4.jpg in Resources */,
+				645D08152005460E00918FE5 /* pug3.jpg in Resources */,
+				645D07501FFEE79A00918FE5 /* quantized_stripped_dogs_retrained.pb in Resources */,
+				645D07341FFEE43800918FE5 /* Main.storyboard in Resources */,
+				645D081C2005464100918FE5 /* lab1.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71F500D2B4BBBB17714A3037 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloTensorFlow/Pods-HelloTensorFlow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7AAB205BA065ADD98C5F01C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloTensorFlow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB174D044EDCB73F688D7B85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloTensorFlow/Pods-HelloTensorFlow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		645D07251FFEE43800918FE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645D07311FFEE43800918FE5 /* ViewController.mm in Sources */,
+				645D07441FFEE62200918FE5 /* ios_image_load.mm in Sources */,
+				645D073C1FFEE43800918FE5 /* main.m in Sources */,
+				645D072E1FFEE43800918FE5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		645D07321FFEE43800918FE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				645D07331FFEE43800918FE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		645D07371FFEE43800918FE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				645D07381FFEE43800918FE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		645D073D1FFEE43800918FE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		645D073E1FFEE43800918FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		645D07401FFEE43800918FE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4000B062A010DEF1D9F2179 /* Pods-HelloTensorFlow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V568RNX5Q4;
+				INFOPLIST_FILE = HelloTensorFlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ailabby.mobileai.HelloTensorFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		645D07411FFEE43800918FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5BA43B6268D7DFBAC847590 /* Pods-HelloTensorFlow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V568RNX5Q4;
+				INFOPLIST_FILE = HelloTensorFlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ailabby.mobileai.HelloTensorFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		645D07241FFEE43800918FE5 /* Build configuration list for PBXProject "HelloTensorFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645D073D1FFEE43800918FE5 /* Debug */,
+				645D073E1FFEE43800918FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		645D073F1FFEE43800918FE5 /* Build configuration list for PBXNativeTarget "HelloTensorFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645D07401FFEE43800918FE5 /* Debug */,
+				645D07411FFEE43800918FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 645D07211FFEE43800918FE5 /* Project object */;
+}
